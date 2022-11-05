@@ -1,3 +1,5 @@
+@import url(reset.css);
+
 body {
   background: #e5e5e5;
   overflow: hidden;
@@ -13,7 +15,6 @@ body {
   right: -150px;
   top: -120px;
   border-radius: 50%;
-  /* background-color: #c1daed; */
   background-color: #83bd75;
 }
 .circle_container2 {
@@ -27,15 +28,14 @@ body {
   left: -260px;
   bottom: -200px;
   border-radius: 50%;
-  /* border: 76px solid rgba(55, 120, 194, 0.7); */
   border: 76px solid #6cbe48;
   opacity: 50%;
+  z-index: -1;
 }
-.text {
+.content {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -44,16 +44,92 @@ body {
   font-weight: 900;
   text-align: center;
   word-break: normal;
-  z-index: 99;
-}
-.subtitle {
-  font-size: 40px;
-  font-weight: 500;
-}
-.discription {
-  font-size: 30px;
+  z-index: 1;
   position: absolute;
-  bottom: 5px;
+  top: 35%;
+  line-height: 1.1;
+}
+
+.office_container {
+  display: flex;
+  column-gap: 70px;
+  position: absolute;
+  bottom: 15%;
+}
+
+.office {
+  width: 345px;
+  height: 165px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  position: relative;
+}
+
+.office_circle {
+  width: 35px;
+  height: 35px;
+  background-color: #83bd75;
+  border-radius: 50%;
+  position: absolute;
+  top: 11px;
+  left: 15px;
+}
+
+.office_content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+  margin-top: 23px;
+}
+
+.office_title_container {
+  display: flex;
+  z-index: 1;
+}
+
+.office_title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.office_phone {
+  font-size: 20px;
+  margin-top: 17px;
+}
+
+.office_address {
+  font-size: 20px;
+  margin-top: 6px;
+  line-height: 1.2;
+}
+
+.contect_title {
+  font-size: 35px;
+  margin-top: 60px;
+}
+
+.contect_container {
+  display: flex;
+  gap: 50px;
+  position: absolute;
+  bottom: 3%;
+}
+
+.contect_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  transform: translateY(0);
+  transition: all ease-in-out 0.1s;
+}
+
+.contect_button:hover {
+  transform: translateY(-3px);
 }
 
 @media only screen and (max-width: 800px) {
@@ -73,9 +149,6 @@ body {
     font-size: 40px;
   }
   .subtitle {
-    font-size: 20px;
-  }
-  .discription {
     font-size: 20px;
   }
 }
