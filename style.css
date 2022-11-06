@@ -52,6 +52,7 @@ body {
 
 .office_container {
   display: flex;
+  justify-content: center;
   column-gap: 70px;
   position: absolute;
   bottom: 15%;
@@ -146,9 +147,42 @@ body {
     bottom: -140px;
   }
   .title {
+    top: 15%;
     font-size: 40px;
   }
-  .subtitle {
+  .office_container {
+    flex-wrap: wrap;
+    row-gap: 30px;
+    bottom: 20%;
+  }
+  .office_circle {
+    top: 9px;
+  }
+  .office_content {
+    margin-left: 30px;
+    margin-top: 17px;
+  }
+  .bi-chevron-right {
+    width: 20px;
+    height: 20px;
+  }
+  .office {
+    width: 300px;
+    height: 120px;
+  }
+  .office_circle {
+    width: 25px;
+    height: 25px;
+  }
+  .office_title {
     font-size: 20px;
+  }
+  .office_phone {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .office_address {
+    font-size: 15px;
+    margin-top: 4px;
   }
 }
