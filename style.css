@@ -147,13 +147,13 @@ body {
     bottom: -140px;
   }
   .title {
-    top: 15%;
+    top: 10%;
     font-size: 40px;
   }
   .office_container {
     flex-wrap: wrap;
     row-gap: 30px;
-    bottom: 20%;
+    bottom: 15%;
   }
   .office_circle {
     top: 9px;
