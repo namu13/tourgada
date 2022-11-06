@@ -186,3 +186,10 @@ body {
     margin-top: 4px;
   }
 }
+
+@media only screen and (max-height: 720px) {
+  .title {
+    top: 5%;
+    font-size: 30px;
+  }
+}
